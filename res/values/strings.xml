@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NuFuel</string>
+	<string name="app_desc">Crowdsourced tool for finding alternative fueling stations</string>
+	<string-array name="map_views">
+        <item>Street</item>
+        <item>Satellite</item>
+    </string-array>
+    <string-array name="station_types">
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>23</item>
+		<item>24</item>
+		<item>25</item>
+    </string-array>
+    <string-array name="station_types_names">
+		<item>Biodiesel (B20 and above)</item>
+        <item>Electric</item>
+        <item>Ethanol (E85)</item>
+        <item>Hydrogen</item>
+        <item>Natural Gas (Compressed)</item>
+        <item>Natural Gas (Liquefied)</item>
+        <item>Propane (LPG)</item>
+    </string-array>
+    <string-array name="update_freqs">
+        <item>1 Hour</item>
+        <item>3 Hours</item>
+        <item>6 Hours</item>
+        <item>9 Hours</item>
+        <item>12 Hours</item>
+        <item>1 Day</item>
+    </string-array>
+    <string-array name="update_freqs_vals">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+</resources>

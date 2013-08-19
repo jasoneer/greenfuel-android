@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:buttonStyle">@style/Button</item>
+    </style>
+    <style name="Button" parent="@android:style/Widget.Button">
+    		<item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+</resources>

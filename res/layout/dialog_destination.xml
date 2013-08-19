@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dip"
+>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:text="Enter Location Address:"
+		android:textColor="@color/dialog_text"
+	/>
+	<EditText
+		android:id="@+id/dialog_destination_address"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPostalAddress"
+	/>
+	<!--<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="OR"
+		android:textColor="@color/dialog_text"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:text="Enter Latitude, Longitude:"
+		android:textColor="@color/dialog_text"
+	/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="2"
+	>
+		<EditText
+			android:id="@+id/dialog_destination_latitude"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:inputType="numberDecimal|numberSigned"
+		/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" , "
+			android:textColor="@color/dialog_text"
+		/>
+		<EditText
+			android:id="@+id/dialog_destination_longitude"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:inputType="numberDecimal|numberSigned"
+		/>
+	</LinearLayout>
+	<RadioGroup
+		android:id="@+id/dialog_destination_choice"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="2"
+	>
+		<RadioButton
+			android:id="@+id/dialog_destination_add"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text=" Address"
+			android:textColor="@color/dialog_text"
+		/>
+		<RadioButton
+			android:id="@+id/dialog_destination_geo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text=" Lat-Lon"
+			android:textColor="@color/dialog_text"
+		/>
+	</RadioGroup>-->
+</LinearLayout>

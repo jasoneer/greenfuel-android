@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Dialog">
+		<!--<item name="android:textColor">@color/dialog_text</item>-->
+    
+    		<item name="android:windowFrame">@null</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowBackground">@drawable/dialog</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowSoftInputMode">stateVisible|adjustPan</item>
+    </style>
+
+    <color name="dialog_text">#fff</color>
+    <color name="dialog_back1">#a777</color>
+    <color name="dialog_back2">#aaaa</color>
+    <color name="dialog_border">#fff</color>
+</resources>

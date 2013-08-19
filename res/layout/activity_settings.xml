@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="Station"
+	>
+		<EditTextPreference
+			android:key="station_view"
+			android:title="Limit Results Shown"
+			android:summary="Set the number of stations returned in a search"
+			android:numeric="integer"
+		/>
+		<ListPreference
+			android:key="station_type"
+			android:title="Set Results Types"
+			android:summary="Set the types of stations returned in a search"
+			android:entries="@array/station_types_names"
+			android:entryValues="@array/station_types"
+		/>
+		<CheckBoxPreference
+			android:key="station_status_open"
+			android:title="Open Stations Only"
+			android:summary="Show only active stations returned in a search"
+			android:defaultValue="true"
+		/>
+		<CheckBoxPreference
+			android:key="station_status_type"
+			android:dependency="station_status_open"
+			android:title="Public Stations Only"
+			android:summary="Show only public stations returned in a search"
+			android:defaultValue="true"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Map View"
+	>
+		<ListPreference	
+			android:key="map_view"
+			android:title="Map View Type"
+			android:summary="Set the map view type for the map"
+			android:entries="@array/map_views"
+			android:entryValues="@array/map_views"
+			android:defaultValue="Street"
+		/>
+		<CheckBoxPreference
+			android:key="map_street"
+			android:title="Show Street View"
+			android:summary="Set street view availabilty on the map"
+			android:defaultValue="false"
+		/>
+		<CheckBoxPreference
+			android:key="map_traffic"
+			android:title="Show Traffic View"
+			android:summary="Set traffic availabilty on the map"
+			android:defaultValue="false"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Update"
+	>
+		<ListPreference
+			android:key="update_refresh"
+			android:title="Refresh Frequency"
+			android:summary="Control the frequency of data updates"
+			android:entries="@array/update_freqs"
+			android:entryValues="@array/update_freqs_vals"
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

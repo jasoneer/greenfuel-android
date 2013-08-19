@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.isotix.nufuel"
+	android:versionCode="1"
+	android:versionName="1.0"
+>
+	<uses-sdk 
+		android:minSdkVersion="8" 
+		android:targetSdkVersion="8"
+	/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application 
+    		android:name=".App"
+		android:label="@string/app_name"
+		android:description="@string/app_desc"
+		android:theme="@style/AppTheme"
+		android:icon="@drawable/icon"
+	>
+		<uses-library android:name="com.google.android.maps" />
+        <activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+		>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activities -->
+		<activity
+			android:name=".SettingsActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+		/>
+		<activity
+			android:name=".ManageActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+		/>
+		<activity
+			android:name=".StationCreateActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+		/>
+		<activity
+			android:name=".StationReviseActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+		/>
+		<activity
+			android:name=".StationDesireActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+		/>
+		<!-- Services -->
+		<service
+			android:name=".MainService"
+			android:exported="false"
+		/>
+    </application>
+</manifest> 

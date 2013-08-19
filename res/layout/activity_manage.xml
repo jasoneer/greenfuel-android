@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="Existing or Planned Stations"
+	>
+		<Preference
+			android:key="station_add"
+			android:persistent="false"
+			android:title="Add New Station"
+			android:summary="Add an existing or planned station, subject to approval, to the database"
+		/>
+		<Preference
+			android:key="station_edit"
+			android:persistent="false"
+			android:title="Revise Station"
+			android:summary="Make changes, subject to approval, to an existing or planned station"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="User Desired Stations"
+	>
+		<Preference	
+			android:key="station_wish"
+			android:persistent="false"
+			android:title="Manage Desired Stations"
+			android:summary="Add, edit, or remove desired stations"
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

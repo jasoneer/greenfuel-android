@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dip"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<EditText
+			android:id="@+id/dialog_show_location_edit"
+			android:layout_width="50dip"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:numeric="integer"
+			android:maxLength="2"
+			android:text="10"
+		/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dip"
+			android:text="km of"
+			android:textColor="@color/dialog_text"
+		/>
+		<Button
+			android:id="@+id/dialog_show_location_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Current Location"
+		/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+	>
+		<EditText
+			android:id="@+id/dialog_show_destination_edit"
+			android:layout_width="50dip"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:numeric="integer"
+			android:maxLength="2"
+			android:text="10"
+		/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dip"
+			android:text="km of"
+			android:textColor="@color/dialog_text"
+		/>
+		<Button
+			android:id="@+id/dialog_show_destination_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Set Location"
+		/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<EditText
+			android:id="@+id/dialog_show_alongroute_edit"
+			android:layout_width="50dip"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:numeric="integer"
+			android:maxLength="2"
+			android:text="10"
+		/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dip"
+			android:text="km of"
+			android:textColor="@color/dialog_text"
+		/>
+		<Button
+			android:id="@+id/dialog_show_alongroute_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Along Route"
+		/>
+	</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dip"
+>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Start Location:"
+		android:textSize="18sp"
+		android:textColor="@color/dialog_text"
+	/>
+	<CheckBox
+		android:id="@+id/dialog_alongroute_start_current"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="  Current Location"
+		android:textColor="@color/dialog_text"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="OR"
+		android:textColor="@color/dialog_text"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:text="Enter Start Address:"
+		android:textColor="@color/dialog_text"
+	/>
+	<EditText
+		android:id="@+id/dialog_alongroute_start_address"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPostalAddress"
+	/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+		android:background="@color/dialog_border"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="End Location:"
+		android:textSize="18sp"
+		android:textColor="@color/dialog_text"
+	/>
+	<CheckBox
+		android:id="@+id/dialog_alongroute_end_current"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="  Current Location"
+		android:textColor="@color/dialog_text"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="OR"
+		android:textColor="@color/dialog_text"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:text="Enter Destination Address:"
+		android:textColor="@color/dialog_text"
+	/>
+	<EditText
+		android:id="@+id/dialog_alongroute_end_address"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPostalAddress"
+	/>
+</LinearLayout>
