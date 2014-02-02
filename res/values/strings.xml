@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NuFuel</string>
-	<string name="app_desc">Crowdsourced tool for finding alternative fueling stations</string>
+    <string name="app_name">GreenFuel</string>
+	<string name="app_desc">Find eco-friendly alternative fuel stations</string>
 	<string-array name="map_views">
         <item>Street</item>
         <item>Satellite</item>

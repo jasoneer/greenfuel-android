@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.isotix.nufuel"
+	package="com.isotix.greenfuel"
 	android:versionCode="1"
 	android:versionName="1.0"
 >
 	<uses-sdk 
-		android:minSdkVersion="8" 
-		android:targetSdkVersion="8"
+		android:minSdkVersion="10"
+		android:targetSdkVersion="10"
 	/>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -19,7 +19,7 @@
 	>
 		<uses-library android:name="com.google.android.maps" />
         <activity
-			android:name=".MainActivity"
+			android:name=".activity.MainActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 		>
@@ -30,29 +30,29 @@
         </activity>
         <!-- Activities -->
 		<activity
-			android:name=".SettingsActivity"
+			android:name=".activity.SettingsActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 			android:theme="@android:style/Theme.Light.NoTitleBar"
 		/>
 		<activity
-			android:name=".ManageActivity"
+			android:name=".activity.ManageActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 			android:theme="@android:style/Theme.Light.NoTitleBar"
 		/>
 		<activity
-			android:name=".StationCreateActivity"
+			android:name=".activity.StationCreateActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 		/>
 		<activity
-			android:name=".StationReviseActivity"
+			android:name=".activity.StationReviseActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 		/>
 		<activity
-			android:name=".StationDesireActivity"
+			android:name=".activity.StationDesireActivity"
 			android:configChanges="orientation|keyboardHidden"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
 		/>
