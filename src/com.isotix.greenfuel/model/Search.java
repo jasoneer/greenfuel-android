@@ -162,7 +162,7 @@ public class Search
 		App.CurrentActivity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				App.OverlayStation.buildOverlayItems();
+//				App.OverlayStation.buildOverlayItems();
 			}
 		});
 		return true;

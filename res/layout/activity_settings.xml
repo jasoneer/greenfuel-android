@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
 	<PreferenceCategory
 		android:title="Station"
 	>
@@ -40,12 +43,6 @@
 			android:entries="@array/map_views"
 			android:entryValues="@array/map_views"
 			android:defaultValue="Street"
-		/>
-		<CheckBoxPreference
-			android:key="map_street"
-			android:title="Show Street View"
-			android:summary="Set street view availabilty on the map"
-			android:defaultValue="false"
 		/>
 		<CheckBoxPreference
 			android:key="map_traffic"

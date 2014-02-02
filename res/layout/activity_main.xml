@@ -25,7 +25,7 @@
 			android:layout_alignParentLeft="true"
 			android:background="@drawable/button_bar"
 			android:scaleType="fitCenter"
-			android:src="@drawable/logo_its"
+			android:src="@drawable/logo"
 		/>
 -->
 		<Button
@@ -50,16 +50,13 @@
 		android:orientation="vertical"
 		android:weightSum="1"
 	>
-		<com.google.android.maps.MapView 
-			android:id="@+id/mapview"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:enabled="true"
-			android:clickable="true"
-			android:apiKey="01bH7PpvdxwLbyD9EuEDm708B1gwe74oHL0-33g"
-		/>
-		<View
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+        <View
 			android:layout_width="match_parent"
 			android:layout_height="1dip"
 			android:layout_weight="0"

@@ -142,7 +142,6 @@ public class Positioner implements LocationListener,
 		Location location = manager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 		if(location != null) listener.onPositionFix(location.getLatitude(),
 													location.getLongitude());
-		listener = null;
 	}
 	
 	public void onLocationChanged(Location location)

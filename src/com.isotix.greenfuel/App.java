@@ -6,8 +6,6 @@ import android.preference.PreferenceManager;
 
 import com.isotix.greenfuel.activity.MainActivity;
 import com.isotix.greenfuel.model.User;
-import com.isotix.greenfuel.overlay.RouteOverlay;
-import com.isotix.greenfuel.overlay.StationOverlay;
 import com.isotix.greenfuel.utility.Databaser;
 import com.isotix.greenfuel.utility.Positioner;
 
@@ -20,9 +18,6 @@ public class App extends Application
 		Current = this;
 		Database = new Databaser();
 		Position = new Positioner();
-
-		OverlayRoute = new RouteOverlay();
-		OverlayStation = new StationOverlay();
 
 		SharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 		
@@ -37,9 +32,6 @@ public class App extends Application
 	
 	public static Databaser  Database;
 	public static Positioner Position;
-
-	public static RouteOverlay OverlayRoute;
-	public static StationOverlay OverlayStation;
 
 	public static SharedPreferences SharedPrefs;
 	

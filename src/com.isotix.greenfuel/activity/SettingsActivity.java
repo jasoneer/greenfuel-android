@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
+import com.google.android.gms.maps.GoogleMap;
 import com.isotix.greenfuel.App;
 import com.isotix.greenfuel.R;
 
@@ -20,18 +21,19 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
     public void onSharedPreferenceChanged(SharedPreferences sharedPrefs, String key)
     {
         if(key.equals("map_view")) {
-            String mapType = sharedPrefs.getString(key, "");
-            if(mapType.equals("Street")) {
-            		App.CurrentActivity.getMapView().setSatellite(false);
+            String mapType = sharedPrefs.getString(key, "Normal");
+            if(mapType.equals("Normal")) {
+                App.CurrentActivity.getGoogleMap().setMapType(GoogleMap.MAP_TYPE_NORMAL);
+            } else if(mapType.equals("Hybrid")) {
+                App.CurrentActivity.getGoogleMap().setMapType(GoogleMap.MAP_TYPE_HYBRID);
+            } else if(mapType.equals("Terrain")) {
+                App.CurrentActivity.getGoogleMap().setMapType(GoogleMap.MAP_TYPE_TERRAIN);
             } else if(mapType.equals("Satellite")) {
-            		App.CurrentActivity.getMapView().setSatellite(true);
+                App.CurrentActivity.getGoogleMap().setMapType(GoogleMap.MAP_TYPE_SATELLITE);
             }
         } else if(key.equals("map_traffic")) {
-            App.CurrentActivity.getMapView().setTraffic(sharedPrefs.getBoolean(key, false));
+            App.CurrentActivity.getGoogleMap().setTrafficEnabled(sharedPrefs.getBoolean(key, false));
         }
-//        else if(key.equals("map_street")) {
-//            App.CurrentActivity.getMapView().setStreetView(sharedPrefs.getBoolean(key, false));
-//        }
     }
 
 	@Override
