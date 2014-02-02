@@ -1,4 +1,4 @@
-alternative-fuel-stations
+green-fuel-android
 =========================
 
-Android app for finding alternative fuel stations from public data
+Android app for finding eco-friendly alternative fuel stations from public data
